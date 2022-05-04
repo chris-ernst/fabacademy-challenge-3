@@ -23,7 +23,7 @@ response = openai.Completion.create(
 )
 
 
-print(type(response.choices))
+# print(type(response.choices))
 
 for choice in response.choices:
 	print(choice.text)
