@@ -18,7 +18,7 @@ from dotenv import dotenv_values
 
 url_current = 'https://cernst.flounder.online'
 
-jumps = 6
+jumps = 3
 
 
 ###### FORBIDDEN
@@ -44,10 +44,10 @@ for i in range(1,jumps):
 
 	try:
 
-		### switch out headlines, parse H2
+		### rotate out headlines, parse H2
 		headline_previous = headline_current
 		headline_current = (soup.h2.get_text())
-		print("---",headline_current, headline_previous)
+
 
 		###### GPT3 #################################
 
@@ -62,7 +62,7 @@ for i in range(1,jumps):
 
 		response = openai.Completion.create(
 		  engine="text-davinci-002",
-		  prompt="Write a short story with "+headline_previous+"and"+headline_current+"as the main stubjects.",
+		  prompt="Write a short story with "+headline_previous+" and "+headline_current+".",
 		  temperature=0.8,
 		  max_tokens=500,
 		  top_p=1,
@@ -70,9 +70,14 @@ for i in range(1,jumps):
 		  presence_penalty=1.5
 		)
 
+		print("---Prompt:")
+		print("Write a short story with '"+headline_previous+"' and '"+headline_current+"'.")
+		print("---Response:")
 
 		for item in response.choices:
 			print(item.text)
+
+		print()
 
 		#######################################
 
