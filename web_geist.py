@@ -18,7 +18,7 @@ from dotenv import dotenv_values
 
 url_current = 'https://cernst.flounder.online'
 
-jumps = 3
+jumps = 5
 
 
 ###### FORBIDDEN
