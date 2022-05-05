@@ -81,8 +81,8 @@ for i in range(1,jumps):
 
 		#######################################
 
-	except:
-		print('---no H2 found')
+	except Exception as e:
+		print(e)
 		
 	######
 
