@@ -27,6 +27,16 @@ forbidden = ['google', 'facebook', 'twitter', 'linkedin', 'instagram', 'wikipedi
 forbidden.append('flounder')
 forbidden.append('iaac')
 
+def validate_url(url):
+	global forbidden
+	parsed_uri = urlparse(url).netloc
+	sub_urls = url.split(".")
+	for u in sub_urls:
+		if u in forbidden:
+			return False
+	return True
+
+
 
 ###### FINE-TUNING LINKS ARRAY
 
@@ -38,14 +48,7 @@ for i in range(1,jumps):
 		if link.has_attr('href'):
 			all_links.append(link['href'])
 
-	def validate_url(url):
-		global forbidden
-		parsed_uri = urlparse(url).netloc
-		sub_urls = url.split(".")
-		for u in sub_urls:
-			if u in forbidden:
-				return False
-		return True
+
 
 	allowed_links = list(filter(validate_url, all_links))
 

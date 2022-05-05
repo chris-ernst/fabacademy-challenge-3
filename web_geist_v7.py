@@ -13,6 +13,8 @@ from urllib.parse import urlparse
 start_url = 'https://cernst.flounder.online'
 print(start_url)
 
+
+
 page = requests.get(start_url)
 soup = BeautifulSoup(page.content, 'html.parser')
 
@@ -30,6 +32,10 @@ forbidden_urls.append('iaac')
 ###### FINE-TUNING LINKS ARRAY
 
 for i in range(1,jumps):
+
+
+
+	
 
 	all_urls = []
 	vetted_urls = []
