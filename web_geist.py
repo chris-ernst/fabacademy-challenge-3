@@ -19,7 +19,7 @@ from dotenv import dotenv_values
 # url_current = 'https://cernst.flounder.online'
 jumps = 5
 
-url_current = input("Please enter start URL (starting with 'https//'): ")
+url_current = input("Please enter start URL (starting with 'https://'): ")
 # jumps = (input("How many jumps?")
 # jumps = int(jumps)
 # print(jumps)

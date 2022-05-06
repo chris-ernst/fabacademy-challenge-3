@@ -41,9 +41,10 @@ This script generates visuals with the help of Dalle-E, running in a Colab insta
 ![](/img/5.png)
 
 ## Next Steps
-- Finish Interfacing with the termal printer
-- Integrate image generation into story generator
-– Design a protocol to deliver text and Bitmaps from the Pi to the printer
+1. Finish Interfacing with the termal printer
+2. Integrate image generation into story generator
+3. Design a protocol to deliver text and Bitmaps from the Pi to the printer
+4. Build an enclosure
 
 
 
