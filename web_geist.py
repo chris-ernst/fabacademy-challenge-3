@@ -16,10 +16,15 @@ from dotenv import dotenv_values
 # url_current = 'https://www.wikipedia.org'
 # url_current = 'https://uroulette.com/visit/owtqw'
 
-url_current = 'https://cernst.flounder.online'
-
+# url_current = 'https://cernst.flounder.online'
 jumps = 5
 
+url_current = input("Please enter start URL (starting with 'https//'): ")
+# jumps = (input("How many jumps?")
+# jumps = int(jumps)
+# print(jumps)
+
+print("jumping to: "+url_current)
 
 ###### FORBIDDEN
 

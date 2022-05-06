@@ -9,8 +9,6 @@ img_prompt = input("Please enter something: ")
 print("Image generating: " + img_prompt)
 
 
-
-
 ID = "https://plenty-cameras-learn-35-247-103-148.loca.lt"
 url = f"{ID}//dalle"
 
