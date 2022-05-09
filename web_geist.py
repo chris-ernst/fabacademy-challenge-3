@@ -4,27 +4,20 @@ import re
 from random import choice
 from urllib.parse import urlparse
 
-###
-
 import openai
-import json
 from dotenv import dotenv_values
 
 
-##### DEFINE START URL & JUMPS
+##### SETUP START URL & JUMPS
 
 # url_current = 'https://www.wikipedia.org'
 # url_current = 'https://uroulette.com/visit/owtqw'
-
 # url_current = 'https://cernst.flounder.online'
-jumps = 5
 
-url_current = input("Please enter start URL (starting with 'https://'): ")
-# jumps = (input("How many jumps?")
-# jumps = int(jumps)
-# print(jumps)
+url_current = input("Please enter start URL: ")
 
-print("jumping to: "+url_current)
+jumps = int(input("How many jumps? "))
+print("Jumping", jumps, "times, starting at", url_current+".")
 
 ###### FORBIDDEN
 
