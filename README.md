@@ -46,6 +46,6 @@ This script generates visuals with the help of Dalle-E, running in a Colab insta
 3. Design a protocol to deliver text and Bitmaps from the Pi to the printer
 4. Build an enclosure
 
-
-
-
+## Personal Posts
+- [Chris](https://chris-ernst.github.io/fablab-documentation/blog/challenge-03.html)
+- [Jeremy](https://publish.obsidian.md/jeremyparadie/%F0%9F%8C%90+Website/MDEF/MDEF+Academy/Micro+Challenge+3)
